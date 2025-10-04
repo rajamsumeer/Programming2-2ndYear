@@ -53,7 +53,7 @@ if (maxNum > 1000000) {
     return 2; // return error code 2 to shell
 }
 
-int randomNum; // declare int variable for generating random number from given ranges
+int randomNum;
 randomNum = rand() % maxNum + minNum; // define for number generator between input min to input max ranges
 fprintf(stdout, "\nYour random number between the ranges is:\n[%d]", randomNum); // print out generated number
 
