@@ -23,7 +23,8 @@ int formulaFunction(int x, int y) {
 }
 
 int main() {
-    int x, int y;
+    int x, 
+    int y;
     int radius = 10;
 
     fprintf(stdout, "Y-AXIS"); // text for Y axis placement
