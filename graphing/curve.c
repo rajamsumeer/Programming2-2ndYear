@@ -19,11 +19,10 @@
 // - Joseph O.
 */
 
-#include <stdio.h> // define preprocessor directive library for basic functions
+#include <stdio.h>
 
 int main() {
-    int x;
-    int y;
+    int x, int y;
 
     fprintf(stdout, "Y-AXIS"); // text for Y axis placement
     for (y = 70; y >= 0; y = y-2) { // y = 70, decrement y by 2 each time
