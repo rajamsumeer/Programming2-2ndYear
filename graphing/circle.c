@@ -17,8 +17,8 @@
 // - Joseph O. for XXCURVE structure.
 */
 
-#include <stdio.h> // define preprocessor directive library for basic functions
-#include <math.h> // define math library for other math functions
+#include <stdio.h>
+#include <math.h>
 
 // integer formula function as directly subbing in to a variable was giving blanks
 int formulaFunction(int x, int y) {
@@ -26,10 +26,8 @@ int formulaFunction(int x, int y) {
 }
 
 int main() {
-    int x;
-    int y;
+    int x, int y;
     int radius = 10;
-    //int formula = (x * x + y * y); // X2 + Y2 = R2 formula
 
     fprintf(stdout, "Y-AXIS"); // text for Y axis placement
     for (y = 10; y >= -10; y = y-1) { // y = 10, decrement y by 1 each time
