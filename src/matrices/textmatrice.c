@@ -22,7 +22,9 @@ printf("File 1 has been created.\n");
 
 int numericalMatrixA[21][21][4];// 20 rows, 20 columns, 3 elements
 
-int i, int j, int k;
+int i;
+int j;
+int k;
 
 for (i = 0; i < 21; i++) {
     for (j = 0; j < 21; j++) { // column
