@@ -5,7 +5,7 @@ C programme to accept command-line arguments and to print a hollow square on the
 
 #include <stdio.h>	// required for the printf function
 #include <stdlib.h>	// required for the atoi function
-#include <math.h> // define math functions in case
+#include <math.h>
 #define SQUARE_SIZE 10
 #define DIV 5/3 //define aspect ratio for walls
 /*
@@ -13,18 +13,16 @@ Student ID:
 Student Name: Raja Sumeer
 Date: 31/10/2024 22:57
 Code Purpose: Shapes output & arguments.
-Validation of Code:
 Credits: Matas N for side wall ratio to make the shape more into a square
-Supporting Code from Author(s): Mark Deegan via xxSquare03.c
 */
 int main(int argc, char** argv)
-{	// start of main loop
-	int numArgs = argc;	// copy the numnber of Command-Line Arguments
-	if (numArgs == 0) { // if no args given print programme name and prompt for args
+{
+	int numArgs = argc;
+	if (numArgs == 0) {
 		printf("The name of the programme was: %s\n\nPlease provide some arguments.\n", argv[0]);
-	} else if (numArgs < 3) { // if less than 2 args given, print programme name and prompt for args
+	} else if (numArgs < 3) {
 		printf("The name of the programme was: %s\n\nPlease provide two arguments.\nSpecify a width length and character.\n", argv[0]);
-	} else { // if conditions fulfilled, run the code
+	} else { // if conditions fulfilled
 	char use = argv[2][0];
 	int side_len = SQUARE_SIZE;
 	side_len = atoi(argv[1]);
