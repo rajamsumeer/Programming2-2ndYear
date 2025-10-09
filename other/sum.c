@@ -8,15 +8,15 @@ Credits: Joseph Obong for <stdlib.h> and atoi explanation
 Credits: Mark Deegan for Textfile creation on Brightspace under "File Handling in C"
 Credits: saving a file to a folder - https://www.reddit.com/r/C_Programming/comments/qkk624/fopenfiletxt_vs_fopenusersmynamefiletxt/
 */
-#include <stdio.h> // define library for basic functions
+#include <stdio.h>
 #include <stdlib.h> // define library for other functions such as atio
-#include <math.h> // define advanced math functions library in case its needed
-int main(int argc, char* argv[]) { // start of main loop
-    int integerArgs; // define integer for storing input values
-    int i; // define integer variable i
-    int value; // define integer variable value as 0;
-    int value2; // define integer variable value 2 to add to value.
-    int total = 0; // define integer variable to store the total.
+#include <math.h>
+int main(int argc, char* argv[]) {
+    int integerArgs;
+    int i;
+    int value;
+    int value2;
+    int total = 0;
     integerArgs = argc -1; // number of arguments provided in argc
     
     // now using an example from Joseph to use only one for loop
@@ -25,24 +25,23 @@ int main(int argc, char* argv[]) { // start of main loop
     for (i = 1; i <= integerArgs; i++) {
         value = atoi(argv[i]); // convert each argument into a numerical value
         total += value; // add arguments together for total
-        // experimental errors using + resulted in output being 0
-        printf("[%d] %s\n", i, argv[i]); // print each given argument in a organised [] form
+        printf("[%d] %s\n", i, argv[i]);
     }
-    printf("\nYour result is %d", total); // print result of arguments
+    printf("\nYour result is %d", total);
     }
 
     // create a text file for results
     FILE *fptr; // declare file pointer
-    fptr = fopen("Lesson2/results.txt", "w"); // create a new file on the write mode under Lesson2 folder
-    fprintf(fptr, "Your result is %d", total); // write result into it
-    fclose(fptr); // saved changes and close file
+    fptr = fopen("Lesson2/results.txt", "w");
+    fprintf(fptr, "Your result is %d", total);
+    fclose(fptr);
 
     // START OF PART 2
     // MIN VALUE
-    int minvalue = atoi(argv[1]); // define the first input for min term
-    int maxvalue; // define integer variable to store max term
+    int minvalue = atoi(argv[1]);
+    int maxvalue;
     int finalvalue;
-    for (i = 1; i <= integerArgs; i++) { // for loop to find the terms
+    for (i = 1; i <= integerArgs; i++) {
     maxvalue = atoi(argv[i]); // convert to numerical value
     } // end of i loop
     if (minvalue < maxvalue) { // if min is less than max, final (min val) is min
@@ -50,7 +49,7 @@ int main(int argc, char* argv[]) { // start of main loop
     } else if (minvalue > maxvalue) { // if min is greater than max, final (min val) is max val
         finalvalue = maxvalue;
     }
-    printf("\nThe min value of those numbers is: %d", finalvalue); // print min value`
+    printf("\nThe min value of those numbers is: %d", finalvalue);
 
     // MAX VALUE
     if (minvalue < maxvalue) { // if min val is less than max val then max val is max 
@@ -58,12 +57,12 @@ int main(int argc, char* argv[]) { // start of main loop
     } else if (minvalue > maxvalue) { // if min val is greater than max val then max val is min val
         finalvalue = minvalue;
     }
-    printf("\nThe max value of those numbers is: %d", finalvalue); // print max value
+    printf("\nThe max value of those numbers is: %d", finalvalue);
 
     // AVERAGE
-    float divsummed; // define floating variable to handle . points
+    float divsummed;
     divsummed = total / integerArgs; // divide the total by number of inputs to get average
-    printf("\nThe average of those numbers is: %1.f", divsummed); // print average
+    printf("\nThe average of those numbers is: %1.f", divsummed);
 
     return 0;
 } // end of main loop
