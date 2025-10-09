@@ -23,7 +23,8 @@ int formulaFunction(int x, int m) { // formula for y = mx+c
 }
 
 int main() {
-    int x, int y;
+    int x, 
+    int y;
     int m = 4; // slope variable
 
     fprintf(stdout, "Y-AXIS"); // text for Y axis placement
