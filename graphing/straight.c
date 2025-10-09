@@ -10,24 +10,21 @@
 // -10 to 10, M = 4
 // - y = mx+c
 
-// Tasks:
-// -
-
 // Supporting Code from Author(s):
 // Due Credits:
 // - Joseph O. for XXCURVE structure.
 */
 
-#include <stdio.h> // define preprocessor directive library for basic functions
+#include <stdio.h>
 
+// Function for returning product
 int formulaFunction(int x, int m) { // formula for y = mx+c
     return (m * x + 0); // return product of m * x
 }
 
 int main() {
-    int x;
-    int y;
-    int m = 4; // define and declare slope variable
+    int x, int y;
+    int m = 4; // slope variable
 
     fprintf(stdout, "Y-AXIS"); // text for Y axis placement
     for (x = -10; x <= 10; x++) { // range from -10 to 10 for line
