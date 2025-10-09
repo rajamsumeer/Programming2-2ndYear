@@ -10,10 +10,6 @@ Date of Creation: 15/01/2025 @ approx 22:00
 Program Purpose:
 - C program.
 - Generates a random number between 1 and 50.
-
-Program Affiliations:
--
--
 */
 
 #include <stdio.h> // preprocessor directive to include definitions for I/O
@@ -24,8 +20,8 @@ int main() {
 srand(time(NULL)); // initialize once for number generator / second
 
 int randomNum;
-randomNum = rand() % 50 + 1; // define for number generator between 1 to 50 and generate random number
-fprintf(stdout, "Your random number is:\n[%d]", randomNum); // print out generated number
+randomNum = rand() % 50 + 1; // number generator between 1 to 50 and generate random number
+fprintf(stdout, "Your random number is:\n[%d]", randomNum);
 
 return 0;
 
