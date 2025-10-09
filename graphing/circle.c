@@ -9,9 +9,6 @@
 // - Plot a circle (disk) with radius 10 and centre = 0,0
 // - X2 + Y2 = R2
 
-// Tasks:
-// -
-
 // Supporting Code from Author(s):
 // Due Credits:
 // - Joseph O. for XXCURVE structure.
