@@ -8,9 +8,6 @@
 // Code Purpose:
 // - Plot a curve line where y = x^2 
 
-// Tasks:
-// -
-
 // - Spacing out method (%3d, %-5d)
 
 // Supporting Code from Author(s):
